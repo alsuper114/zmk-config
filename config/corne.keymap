@@ -9,6 +9,17 @@
 #define FUN    3
 
 / {
+  behaviors { // {{{
+    th: tap_hold {
+      compatible = "zmk,behavior-hold-tap";
+      label = "TAP_HOLD";
+      #binding-cells = <2>;
+      tapping_term_ms = <150>;
+      flavor = "hold-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+  }; // }}}
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -76,3 +87,4 @@
   };
 };
 
+// vim: ft=c
