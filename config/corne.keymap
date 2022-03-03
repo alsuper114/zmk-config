@@ -34,9 +34,9 @@
       //         │ ⌘   Sym ⇧   │ ␣   Nav ⌥   │
       //         └─────────────┴─────────────┘ 
       bindings = <
-        &kp Q       &kp W     &kp F     &kp P     &kp B       &kp J        &kp L     &kp U     &kp Y     &kp BSPC
-        &kp A       &kp R     &kp S     &kp T     &kp G       &kp M        &kp N     &kp E     &kp I     &kp O
-        &kp Z       &kp X     &kp C     &kp D     &kp V       &kp K        &kp H     &kp COMMA &kp DOT   &kp LSHFT
+        &none &kp Q       &kp W     &kp F     &kp P     &kp B       &kp J        &kp L     &kp U     &kp Y     &kp BSPC  &none
+        &none &kp A       &kp R     &kp S     &kp T     &kp G       &kp M        &kp N     &kp E     &kp I     &kp O     &none
+        &none &kp Z       &kp X     &kp C     &kp D     &kp V       &kp K        &kp H     &kp COMMA &kp DOT   &kp LSHFT &none
                               &kp LGUI  &mo SYM   &kp SPACE   &th LCTL RET &mo NAV   &kp RALT
       >;
     }; // }}}
@@ -50,9 +50,9 @@
       //         │             │      Fn     │
       //         └─────────────┴─────────────┘
       bindings = <
-        &kp QUOT  &kp DQT   &kp CARET &kp QMARK &kp GRAVE   &kp LBKT      &kp LT    &kp EQUAL &kp GT    &kp RBKT
-        &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp LBRC      &kp LPAR  &kp COLON &kp RPAR  &kp RBRC
-        &kp BSLH  &kp TILDE &kp PIPE  &kp AMPS  &kp SEMI    &kp SLASH     &kp STAR  &kp MINUS &kp PLUS  &kp UNDER
+        &none &kp QUOT  &kp DQT   &kp CARET &kp QMARK &kp GRAVE   &kp LBKT      &kp LT    &kp EQUAL &kp GT    &kp RBKT  &none
+        &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp LBRC      &kp LPAR  &kp COLON &kp RPAR  &kp RBRC  &none
+        &none &kp BSLH  &kp TILDE &kp PIPE  &kp AMPS  &kp SEMI    &kp SLASH     &kp STAR  &kp MINUS &kp PLUS  &kp UNDER &none
                             &trans    &trans    &trans      &trans        &mo FUN   &trans
       >;
     }; // }}}
@@ -66,9 +66,9 @@
       //         │     Fn      │             │
       //         └─────────────┴─────────────┘ 
       bindings = <
-        &kp LCTRL &kp LGUI  &kp SFTAB &kp TAB   &kp LALT     &trans        &kp HOME  &kp END   &kp END   &kp BSPC
-        &kp N1    &kp N2    &kp N3    &kp N4    &kp N5       &kp LEFT      &kp DOWN  &kp UP    &kp RIGHT &kp RET
-        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0       &kp ESC       &kp PGDN  &kp PGUP  &kp DOT   &th LCTL DEL
+        &none &kp LCTRL &kp LGUI  &kp SFTAB &kp TAB   &kp LALT     &trans        &kp HOME  &kp END   &kp END   &kp BSPC      &none
+        &none &kp N1    &kp N2    &kp N3    &kp N4    &kp N5       &kp LEFT      &kp DOWN  &kp UP    &kp RIGHT &kp RET       &none
+        &none &kp N6    &kp N7    &kp N8    &kp N9    &kp N0       &kp ESC       &kp PGDN  &kp PGUP  &kp DOT   &th LCTL DEL  &none
                             &trans    &mo FUN   &trans       &trans        &trans    &trans
       >;
     }; // }}}
@@ -80,9 +80,9 @@
       // │ f6  f7  f8  f9  f10 │ v⁻  v⁺  ply nxt .   │
       // └─────────────────────┴─────────────────────┘
       bindings = <
-        &none        &none        &none        &none        &none        &none     &kp C_VOL_DN  &kp C_VOL_UP  &none     &none
-        &none        &none        &out OUT_USB &out OUT_BLE &out OUT_TOG &none     &kp C_BRI_DN  &kp C_BRI_UP  &none     &none
-        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &none     &none         &none         &none     &none
+        &none &none        &none        &none        &none        &none        &none     &kp C_VOL_DN  &kp C_VOL_UP  &none  &none  &none
+        &none &none        &none        &out OUT_USB &out OUT_BLE &out OUT_TOG &none     &kp C_BRI_DN  &kp C_BRI_UP  &none  &none  &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &none     &none         &none         &none  &none  &none
                                   &none        &none        &none        &none     &none         &none
       >;
     }; // }}}
